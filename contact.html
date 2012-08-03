@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FriendComp / Contact</title>
+<?php include 'header.php' ?>
+<!--form validation & submit-->
+<link rel="stylesheet" href="scripts/form-validation/validationEngine.jquery.css" type="text/css"/>
+<script src="scripts/form-validation/languages/jquery.validationEngine-en.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/form-validation/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		// binds form submission and fields to the validation engine
+		var frm = $("#contact_form");
+		var msgdiv = $("#message_box_place_holder");
+		frm.validationEngine({promptPosition:'topRight'});
+		
+		$("#btnReset").click(function(){
+			frm[0].reset();
+			return false;
+		});
+		
+		$("#btnSubmit").click(function(){
+			$(".message-box").remove();
+			
+			if(frm.validationEngine('validate')){
+				$(this).fadeOut('fast');
+				$.ajax({
+					type: 'POST',
+					url: 'contact.php',
+					data: frm.serialize(),
+					success: function(result) {
+						if(result=="1")
+						{
+							inlineMsgBox(msgdiv,'information','Thank you. We have received your mail.',617);
+							frm[0].reset();
+						}else{					
+							inlineMsgBox(msgdiv,'error','Error : ' + result,617);
+						}
+						$("#btnSubmit").fadeIn('fast');
+					}
+				});
+			}
+			
+			return false;
+		});
+	});
+</script>			
+<!--/form validation & submit-->
+
+</head>
+
+<!--body-->
+<body>
+<!--facebook JSSDK-->
+<div id="fb-root"></div>
+<?php include 'facebookJS.php' ?>
+
+<!--sliding login panel-->
+<?php include 'login_panel.php' ?>
+
+	<!--top anchor-->
+    <a name="top"></a>
+    
+    <!--body wrapper-->
+    <div id="body-wrapper">
+    
+    	<div id="page-header-wrapper">
+    
+            <!--header container-->
+            <div id="header-contanier">    
+            
+                <?php include 'nav.php' ?>
+                
+            </div>
+            <!-- /header container-->
+
+	        <div class="clear40"></div>
+                       
+            <!--bread crumb-->
+            <div class="center-clear">
+                <div id="breadcrumb" class="page-columns-head-style gray-frame">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </div>
+			</div>                
+            <!--/bread crumb-->
+            
+        </div>
+        <!--/page header wrapper-->
+        
+        
+        <!--page content wrapper-->
+        <div id="page-content-wrapper">        
+        
+            <!--content container-->
+            <div class="center-clear page-content-wrapper">
+                
+                <div class="page-content gray-frame alignleft_block full-content-width">
+                    <!--inner title-->
+                    <h1 class="heading h1">Contact</h1>
+                    <!--/inner title-->
+                    
+					<div class="clear"></div>
+                    
+                    <!--left block-->
+                    <div class="alignleft_block margin-right-20 width-310">
+                    	<!--address-->
+                        <p class="bold_only">Our Address</p>
+                        
+                        <p>5056 Dough Dr. Fremont, CA 94555 USA <br/>
+                        Phone: +1 444-555-1212</p>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <!--address-->
+                        
+                        <div class="clear50"></div>
+
+						<!--contact a person-->
+                        <p class="bold_only">Contact a person</p>
+                        
+                        <p><span class="orange-only">Manager</span><br />
+                        Freddie Mercury freddie@emailaddress.com</p>
+                        
+                        <p><span class="orange-only">Designer</span><br />
+                        Kurt Cobain kurt@emailaddress.com</p>
+                        
+                        <p><span class="orange-only">Developer</span><br />
+                        Bob Marley bob@emailaddress.com</p>
+                        <!--contact a person-->
+                    </div>
+                    <!--/left block-->
+                    
+                    <!--right block-->
+                    <div class="alignleft_block">
+                    	
+                        <!--google maps--
+                        <p class="bold_only">Map</p>
+                        <iframe width="619" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=38.880477,-76.726377&amp;num=1&amp;vpsrc=0&amp;ie=UTF8&amp;t=m&amp;z=14&amp;ll=38.881379,-76.724868&amp;output=embed"></iframe>
+                        <!--/google maps-->
+                        <h1 class="heading h1">More Info &amp; Support</h1>
+                    	<div class="clear10"></div>
+                    	<div class="hr-two"></div>
+                    
+                    	<p class="bold_only">Send a message</p>
+                        <form name="contact_form" id="contact_form" class="generic-form alignleft_block" action="">
+                            <p>
+                                <input type="text" name="name" id="txt_name" class="validate[required] medium user" />
+                                <label for="txt_name">NAME *</label>
+                            </p>
+                            <p>
+                                <input type="text" name="email" id="txt_email" class="validate[required,custom[email]] medium email" />
+                                <label for="txt_email">EMAIL *</label>
+                            </p>
+                              <!--
+                            <p>
+                                <select class="validate[required] custom[url]medium" name="cmb_subject" id="cmb_subject">
+                                    <option value="">-please select-</option>                            
+                                    <option value="1">Customer Support</option>
+                                    <option value="2">Billing Department</option>                            
+                                </select>
+                                <label for="cmb_subject">SUBJECT *</label>
+                            </p>  
+                              -->
+                            <p>
+                                <textarea class="xlarge" rows="6" cols="4" name="message" id="txt_message"></textarea>
+                            </p>
+    
+                            <div id="message_box_place_holder"></div>
+                            
+                            <div class="clear10"></div>
+                            
+                            <a href="#" class="button alignleft_block bold_only margin-right-10" id="btnReset">Reset</a>                            
+                            <a href="#" class="button alignleft_block bold_only" id="btnSubmit">Submit</a>
+                            
+                        </form>
+                    </div>
+                    
+		            <div class="clear20"></div>                    
+                </div>
+                <!--/right block-->
+                
+            </div>
+            <!-- /content container-->
+    	
+            <div class="clear40"></div>
+
+        </div>
+        <!--/page content wrapper-->
+
+        <!--footer-->
+      <div id="footer_container">
+            <?php include 'footer.php' ?>
+      </div>
+      <!-- /footer-->
+    
+    </div>
+    <!--/body wrapper-->    
+</body>
+<!-- /body -->
+
+</html>

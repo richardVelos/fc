@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Incorporate Theme / Welcome</title>
+<link href='http://fonts.googleapis.com/css?family=Terminal+Dosis:400,700,800,600,500,300,200' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/default.css"/>
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="css/ie7.css" />
+<![endif]-->
+
+<!--jquery library-->
+<script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+<!--/jquery library-->
+
+<!--jquery easing-->
+<script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>
+<!--/jquery easing-->
+
+<!--nivo slider plugin for jquery-->
+<script type="text/javascript" src="scripts/nivo-slider/jquery.nivo.slider.js"></script>
+<link rel="stylesheet" type="text/css" href="scripts/nivo-slider/nivo-slider.css"/>
+<link rel="stylesheet" type="text/css" href="scripts/nivo-slider/themes/default/default.css"/>
+<!--/ nivo slider plugin for jquery-->
+
+<!--superfish dropdown-->
+<link rel="stylesheet" type="text/css" href="scripts/superfish/css/superfish.css"/>
+<script type="text/javascript" src="scripts/superfish/js/superfish.js"></script>
+<script type="text/javascript" src="scripts/superfish/js/hoverIntent.js"></script>
+<script type="text/javascript" src="scripts/superfish/js/jquery.bgiframe.min.js"></script>
+<script type="text/javascript" src="scripts/superfish/js/supersubs.js"></script>
+<!--/superfish dropdown-->
+
+<!--auto complete-->
+<script type='text/javascript' src='scripts/autocomplete/jquery.autocomplete.min.js'></script>
+<link rel="stylesheet" type="text/css" href="scripts/autocomplete/jquery.autocomplete.css" />
+<!--/auto complete-->
+
+<!--misc. scripts-->
+<script type="text/javascript" src="scripts/scripts.js"></script>
+<script type="text/javascript" src="scripts/jquery-backgroundpos/jquery.backgroundpos.pack.js"></script>
+<!--/misc. scripts-->
+
+<script type="text/javascript" src="scripts/demo/colorpicker/js/colorpicker.js"></script>
+<link rel="stylesheet" type="text/css" href="scripts/demo/colorpicker/css/colorpicker.css" />
+<script type="text/javascript" src="scripts/demo/demo.js"></script>
+
+</head>
+
+<!--body-->
+<body>
+	<!--background changer-->
+    <div id="background_changer">
+    	<div class="alignleft_block backgrounds">
+			<ul id="theme_roller_list">
+            	<li><a href="#">Color</a>
+                	<div>
+						<span id="color_picker" class="alignleft_block"></span>
+                    </div>
+                </li>
+                <li><a href="#">Pattern</a>
+                	<div id="background_patterns">
+                        <a href="0.html"><img src="images/background/page_tile_0.png" width="24" height="24" alt=""/></a>
+                        <a href="1.html"><img src="images/background/page_tile_1.png" width="24" height="24" alt=""/></a>
+                        <a href="2.html"><img src="images/background/page_tile_2.png" width="24" height="24" alt=""/></a>
+                        <a href="3.html"><img src="images/background/page_tile_3.png" width="24" height="24" alt=""/></a>
+                        <a href="4.html"><img src="images/background/page_tile_4.png" width="24" height="24" alt=""/></a>
+                        <a href="5.html"><img src="images/background/page_tile_5.png" width="24" height="24" alt=""/></a>
+                        <a href="6.html"><img src="images/background/page_tile_6.png" width="24" height="24" alt=""/></a>
+                        <a href="7.html"><img src="images/background/page_tile_7.png" width="24" height="24" alt=""/></a>
+                        <a href="8.html"><img src="images/background/page_tile_8.png" width="24" height="24" alt=""/></a>                        
+                        <a href="9.html"><img src="images/background/page_tile_9.png" width="24" height="24" alt=""/></a>
+                        <a href="10.html"><img src="images/background/page_tile_10.png" width="24" height="24" alt=""/></a>
+                        <a href="11.html"><img src="images/background/page_tile_11.png" width="24" height="24" alt=""/></a>
+                        <a href="12.html"><img src="images/background/page_tile_12.png" width="24" height="24" alt=""/></a>                                                                        
+                        <a href="13.html"><img src="images/background/page_tile_13.png" width="24" height="24" alt=""/></a>                        
+                    </div>
+                </li>
+                <li><a href="#">Background</a>
+                	<div id="background_images">
+                        <a href="1.html"><img src="images/background/bg01.jpg" width="154" alt=""/></a>
+                        <a href="2.html"><img src="images/background/bg02.jpg" width="154" alt=""/></a>
+                        <a href="3.html"><img src="images/background/bg03.jpg" width="154" alt=""/></a>
+                        <a href="4.html"><img src="images/background/bg04.jpg" width="154" alt=""/></a>
+                        <a href="5.html"><img src="images/background/bg05.jpg" width="154" alt=""/></a>                                                                                                
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="alignleft_block open_close">
+			<a href="#" class="arrow">OPEN</a>
+        </div>
+    </div>
+    <!--/background changer-->    
+
+	<!--sliding login panel-->
+	<div id="login_panel">
+    	<div id="content">
+        	<div>
+				<div class="column column1">
+	            	<!--help text, maybe-->
+                    <h3>And now some Lorem Ipsum to fill the content</h3>
+                    <p>
+	                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent scelerisque commodo massa. Ut volutpat. Maecenas luctus augue quis velit.
+                    </p>
+                    <p>
+	                    Ut volutpat. Maecenas luctus augue quis velit. Lorem ipsum dolor sit amet, adipiscing elit. Scelerisque commodo massa. 
+                    </p>                    
+                    <p>
+                        <a href="#" class="orange-only notextdecoration">Not a member yet? Sign Up</a>
+                    </p>
+	            	<!--/help text, maybe-->
+                </div>
+                                
+				<div class="column column2">
+	                <!--user signin-->
+                    <h3>Member Login</h3>
+                    <form name="contact_form" id="contact_form" class="generic-form alignleft_block" action="http://incorporate.ozythemes.com/contact.html">
+                        <p>
+                            <input type="text" name="txt_name" id="txt_name" class="validate[required] medium-login user margin-right-10" />
+                            <input type="text" name="txt_email" id="txt_email" class="validate[required] medium-login password" />
+                        </p>
+                        <div class="clear10"></div>                                                
+                        <p>
+                            <input type="checkbox" id="chk_rememberme" name="chk_rememberme" /><label for="chk_rememberme">Remember Me</label>
+                            &nbsp;/&nbsp;
+                            <a href="#" class="orange-only notextdecoration">Forgot Password?</a>
+						</p>                     
+                           
+                        <div class="clear"></div>
+                        
+                        <a href="#" class="button alignleft_block bold_only notextdecoration" id="btnLoginNow"><span>Login Now</span></a>
+
+                    </form>
+	                <!--/user login-->
+                </div>
+            </div>
+        </div>
+    	<div id="signin_register">
+            <ul>
+                <li>Hello Guest!</li>
+                <li><a href="#">&nbsp;</a></li>
+            </ul>
+    	</div>
+    </div>    
+    <!--/sliding login panel-->
+
+	<div id="body-wrapper">
+        
+        <!--header container-->
+        <div id="header-contanier">    
+        
+            <!--header wrapper-->
+            <div id="header" class="center-clear">   
+                     
+                <!--logo-->
+                <div id="logo">
+                    <!--logo here-->
+                </div>
+                <!-- /logo-->
+                
+                <!--banner 468x60-->
+                <div id="banner_468x60">
+                    <img src="images/temp/banner_468x60.png" width="468" height="60" alt="banner-468x60" />
+                </div>
+                <!-- /banner 468x60-->                
+                                       
+                <!--header place holder-->
+                <div class="header-place-holder"></div>
+                
+                <!--social tabs-->
+                <ul id="social_tabs">
+                    <li><a href="#"><img src="images/social_icons/t.png" width="30" height="27" alt="" /></a></li>
+                    <li><a href="#"><img src="images/social_icons/f.png" width="30" height="27" alt="" /></a></li>
+                    <li><a href="#"><img src="images/social_icons/o.png" width="30" height="27" alt="" /></a></li>
+                    <li><a href="#"><img src="images/social_icons/s.png" width="30" height="27" alt="" /></a></li>
+                    <li><a href="#"><img src="images/social_icons/v.png" width="30" height="27" alt="" /></a></li>
+                </ul>
+                <!-- /social tabs-->
+                
+                <!--menu-->
+                <ul id="top_menu" class="sf-menu">
+                    <li><a href="index-2.html">HOME</a><span>Get Started</span></li>
+                    <li><a href="all_elements.html">FEATURES</a><span>Skins &amp; Font Stacks</span>
+                        <!--first level dropdown menu-->
+                        <ul>
+                            <li><a href="all_elements.html">Elements</a></li>                                                        
+                        </ul>
+                        <!--/first level dropdown menu-->                        
+                    </li>
+                    <li><a href="about.html">PAGES</a><span>Customized Pages</span>
+                        <!--first level dropdown menu-->
+                        <ul>
+                             <li><a href="about.html">Company Info</a></li>
+                             <li><a href="#">Test Sub Menu</a>
+                                <!--second level dropdown menu-->
+                                <ul>
+                                    <li><a href="#">Menu Item #1</a></li>            
+                                    <li><a href="#">Menu Item #2</a></li>
+                                </ul>
+                                 <!--/second level dropdown menu-->
+                             </li>
+                             <li><a href="news.html">News &amp; Announcements</a></li>
+                             <li><a href="services.html">Services</a></li>
+                             <li><a href="ourteam.html">Our Team</a></li>
+                             <li><a href="ourpartners.html">Our Partners</a></li>                                 
+                             <li><a href="testimonials.html">Testimonials</a></li>
+                             <li><a href="job.html">Job Opportunities</a></li>
+                             <li><a href="faq.html">FAQ</a></li>
+                             <li><a href="404.html">404 Page Not Found</a></li>                                 
+                        </ul>
+                        <!--/first level dropdown menu-->                        
+                    </li>
+                    <li><a href="portfolio_1column.html">PORTFOLIO</a><span>View Our Works</span>
+                        <!--first level dropdown menu-->
+                        <ul>
+                            <li><a href="portfolio_4column_gallery.html">4 Column Gallery</a></li>
+                            <li><a href="portfolio_3column_gallery.html">3 Column Gallery</a></li>
+                            <li><a href="portfolio_3column_portrait.html">3 Column Portraits</a></li>
+                            <li><a href="portfolio_2column_gallery.html">2 Column Gallery</a></li>
+                            <li><a href="portfolio_1column.html">1 Column Gallery</a></li>
+                            <li><a href="portfolio_1column_portrait.html">1 Column Portraits</a></li>
+							<li><a href="project-details.html">Portfolio Details</a></li>                            
+                        </ul>
+                        <!--/first level dropdown menu-->                        
+                    </li>
+                    <li><a href="blog.html">BLOG</a><span>See Blog Posts</span>
+                        <!--first level dropdown menu-->
+                        <ul>
+                            <li><a href="blog.html">Posts</a></li>
+                            <li><a href="blog-post.html">Single Post</a></li>
+                        </ul>
+                        <!--/first level dropdown menu-->                        
+                    </li>                                                                
+                    <li><a href="contact.html">CONTACT</a><span>Say Hello!</span></li>           
+                </ul>
+                <!-- /menu-->
+                
+                <!--search box-->
+                <div id="search_box">
+                    <form method="post" name="form_search" id="form_search" class="form_search" action="http://incorporate.ozythemes.com/all_elements.html">
+                        <input type="text" name="txt_search" id="txt_search" class="txt_search" value="search" />
+                        <input type="submit" name="btn_search" id="btn_search" class="btn_search" value="" />
+                    </form>
+                </div>
+                <!-- /search box-->
+                
+            </div>
+            
+        </div>
+        <!-- /header wrapper-->
+        
+        <div class="clear20"></div>
+        
+        <!--content container-->
+        <div id="content_container" class="center-clear">
+            
+            <!--carousel-->
+            <div id="carousel_container">
+                <!--nivo slider-->
+                <div class="theme-default">
+					<div class="ribbon"></div>                
+                    <div id="slider3" class="nivoSlider">
+                        <a href="all_elements.html"><img src="images/temp/slider0.jpg" width="970" height="360" alt="" title="#slider3-caption-0"/></a>
+                        <a href="about.html"><img src="images/temp/slider1.jpg" width="970" height="360" alt=""/></a>
+                        <a href="portfolio_4column_gallery.html"><img src="images/temp/slider2.jpg" width="970" height="360" alt="" title="#slider3-caption-1"/></a>
+                        <a href="blog.html"><img src="images/temp/slider3.jpg" width="970" height="360" alt="" /></a>
+                    </div>
+                </div>
+                <!--/nivo slider-->
+            </div>
+	                <div id="slider3-caption-0" class="nivo-html-caption"><h1>THIS IS THE TITLE</h1><p>You can add captions too</p></div>
+    	            <div id="slider3-caption-1" class="nivo-html-caption"><h1>THIS IS THE TITLE</h1><p>You can add captions too</p></div>
+            
+            <!-- /carousel -->
+            
+            <div class="clear40"></div>
+            
+            <!-- three box -->       
+            <div class="box-three nomargin featured-box transparent-background">
+                <div>
+                    <!-- featured image -->
+                    <div class="home-three-box-sliding-image img-one"></div>
+                    <div>
+                        <!-- featured title -->
+                        <h3>FLEXIBLE GRID</h3>
+                        <div class="clear"></div> 
+                        <!-- text-->
+                        <span>
+                            <a href="about.html">The INCORPORATE is more than a template, it's a comprehensive framework; A collection of several incredibly powerful scripts and CSS structures that's been tied together into a kit that's perfect as a jumpin off point of your next project.</a>
+                        </span>
+                    </div>
+                </div>        
+            </div>
+            <div class="box-three featured-box transparent-background">
+                <div>
+                    <!-- featured image -->
+                    <div class="home-three-box-sliding-image img-two"></div>
+                    <div>
+                        <!-- featured title -->
+                        <h3>BULLETPROOF</h3>
+                        <div class="clear"></div> 
+                        <!-- text-->
+                        <span>
+                            <a href="blog.html">The INCORPORATE is suitable for content producers at all levels whether that’s the personal blogger, online magazines, of full-blown communities. If you’re looking for a beautiful looking magazine or blog theme then you’ve just found it.</a><br />
+                        </span>
+                    </div>
+                </div>       
+            </div>
+            <div class="box-three featured-box transparent-background featured-box-last">
+                <div>
+                    <!-- featured image -->
+                    <div class="home-three-box-sliding-image img-three"></div>
+                    <div>
+                        <!-- featured title -->
+                        <h3>MINIMALIST STYLING</h3>
+                        <div class="clear"></div> 
+                        <!-- text-->
+                        <span>
+                            <a href="ourteam.html">INCORPORATE is well organized. Take what you love, leave what you don't, customize the rest. It's completely in your hands - turn it into the next big thing, or just as your  personal projects, it's up to you.</a>
+                        </span>
+                    </div>
+                </div>        
+            </div>        
+            <!-- /three box -->
+            
+            <div class="clear20"></div>        
+            
+            <!-- three box footer-->      
+            <div class="box-three-sub-wrapper transparent-background"> 
+                <div class="box-three featured-box-sub nomargin">
+                    <div>
+                        <div>
+                            <!-- sub featured title -->
+                            <h3>ABOUT</h3>
+                            <div class="clear"></div> 
+                            <!-- text-->
+                            <span>
+                                The INCORPORATE layout has been designed with responsive, future-proof websites in mind.
+                            </span>
+                            <span>
+                                It supports all of the content you can dream up, including image galleries, advertisement units, all function HTML elements, and lots lots more!
+							</span>
+                            <span>
+                                If you're looking for a template to start building your own next site with, this is a great place to start!
+ 	                        </span>
+                        </div>
+                    </div>        
+                </div>
+                <div class="box-three featured-box-sub">
+                    <div>
+                        <div>
+                            <!-- sub featured title -->
+                            <h3>MOST VIEWED</h3>
+                            <div class="clearfix"></div> 
+                            <!-- list with image -->
+                          <ul>
+                                <li>
+                                    <img src="images/temp/bullet_list1.jpg" alt="" width="55" height="55" />
+                                    <span><a href="#">There are many variations of passages of Lorem Ipsum available.</a></span>
+                                    <span class="times-gray-italic-13">November 26th, 2011</span>
+                              </li>
+                                <li>
+                                    <img src="images/temp/bullet_list2.jpg" alt="" width="55" height="55" />
+                                    <span><a href="#">There are many variations of passages of Lorem Ipsum available.</a></span>
+                                    <span class="times-gray-italic-13">November 26th, 2011</span>
+                                </li>                            
+                            </ul>
+                            <!-- /list with image -->
+                        </div>
+                    </div>       
+                </div>
+                <div class="box-three featured-box-sub">
+                    <div>
+                        <div>
+                            <!-- sub featured title -->
+                            <h3>CONTACT INFO</h3>
+                            <div class="clear"></div> 
+                            <!-- text-->
+                            <span>
+                                <!--<p> for ie 7 fix. works well with others too-->
+                                <span>A: Some Street 95,Some Country</span>
+                                <span>T: + (0) 000-1234-5678</span>
+                                <span>F: + (0) 000-1234-5678</span>
+                                <span>E: yourmail@yoursite.com</span>
+                                <span>E-2: yourmail2@yoursite.com</span>
+                            </span>
+                        </div>
+                    </div>        
+                </div>       
+            </div>             
+            <!-- /three box footer-->        
+        </div>
+        <!-- /content container-->
+    
+        <div class="clear20"></div>
+        
+        <!--footer-->
+        <div id="footer_container">
+            <div id="footer" class="center-clear">
+                <ul>
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">PAGE</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                <div>Copyright 2011 - OzyThemes</div>
+            </div>
+        </div>
+        <!-- /footer-->
+	
+    </div>        
+</body>
+<!-- /body -->
+
+</html>

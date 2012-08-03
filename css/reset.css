@@ -1,0 +1,263 @@
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clear,.clear10,.clear20,.clear30,.clear40,.clear50{
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width:0;/*px !important;*/
+	height:0;
+	/*float:none !important;*/
+}
+
+.clear10{
+	height: 10px;	
+}
+.clear20{
+	height: 20px;	
+}
+
+.clear30{
+	height: 40px;	
+}
+
+.clear40{
+	height: 40px;	
+}
+
+.clear50{
+	height: 50px;	
+}
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: block;
+}
+
+
+.margin_bottom10{
+	margin-bottom:10px;
+}
+
+.margin-top-5{
+	margin-top:5px;
+}
+
+.margin_top10{
+	margin-top:10px;
+}
+
+.margin-left-20{
+	margin-left:20px !important;
+}
+
+.margin-left-8{
+	margin-left:8px !important;
+}
+
+.margin-left-10{
+	margin-left:10px !important;
+}
+
+.margin-right-8{
+	margin-right:8px !important;
+}
+
+.margin-right-18{
+	margin-right:18px !important;
+}
+
+.margin-right-10{
+	margin-right:10px !important;
+}
+
+.margin-right-20{
+	margin-right:20px !important;
+}
+
+.margin-right-22{
+	margin-right:22px !important;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+a{
+	outline: none;
+}
+
+.noshow{
+	display:none;
+}
+
+.nofontstyle{
+	font-style:normal;
+}
+
+.nofontweight{
+	font-weight:bold;
+}
+
+.no-bottom-padding{
+	padding-bottom:0px !important;
+}
+
+
+.notextdecoration{
+	text-decoration:none;
+}
+
+.nopadding{
+	padding:0 !important;
+}
+
+.no-vertical-padding{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+}
+
+.no-horizontal-padding{
+	padding-left:0 !important;
+	padding-right:0 !important;
+}
+
+.nomargin{
+	margin:0 !important;
+}
+
+.no-bottom-margin{
+	margin-bottom:0 !important;
+}
+
+.no-top-margin{
+	margin-top:0 !important;
+}
+
+.padding-5{
+	padding:5px;
+}
+
+.padding-bottom-30{
+	padding-bottom:30px !important;
+}
+
+/*
+alignments
+*/
+
+.aligncenter{
+	display:block;
+	text-align:center; 
+	margin:0 auto 20px auto;
+}
+
+.alignleft{
+	float:left;
+	display: inline;
+}
+
+.alignright{
+	float:right;
+	display: inline;
+}
+
+.alignleft_block{
+	float:left;	
+	display:block;
+}
+
+.alignright_block{
+	float:right;	
+	display:block !important;
+}
