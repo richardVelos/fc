@@ -47,6 +47,14 @@ echo <<<_END
 <script type="text/javascript" src="http://static.stackmob.com/js/backbone-0.9.2-min.js"></script>
 <script type="text/javascript" src="http://static.stackmob.com/js/2.5.3-crypto-sha1-hmac.js"></script>
 <script type="text/javascript" src="http://static.stackmob.com/js/stackmob-js-0.5.5-min.js"></script>
+<script type="text/javascript">
+StackMob.init({
+    appName: "friendcomp",
+    clientSubdomain: "friendcomp",
+    publicKey: "71f56601-6e20-4a6a-9bae-607c2a3a4ef9",
+    apiVersion: 0
+});
+</script>
 <!--/Stackmob scripts-->
 
 _END;

@@ -22,7 +22,7 @@ echo <<<_END
 				<div class="column column2">
 	                <!--user signin-->
                     <h3>Member Login</h3>
-                    <form name="login_form" id="login_form" class="generic-form alignleft_block" action="login.php">
+                    <form name="login_form" id="login_form" class="generic-form alignleft_block" action="http://incorporate.ozythemes.com/contact.html">
                         <p>
                             <input type="text" name="txt_login_name" id="txt_login_name" class="medium-login user margin-right-10" />
                             <input type="text" name="txt_login_email" id="txt_login_email" class="medium-login password" />
@@ -36,7 +36,7 @@ echo <<<_END
                            
                         <div class="clear"></div>
                         
-                        <a href="login.php" class="button alignleft_block bold_only notextdecoration" id="btnLoginNow"><span>Login Now</span></a>
+                        <a href="#" class="button alignleft_block bold_only notextdecoration" id="btnLoginNow"><span>Login Now</span></a>
 
                     </form>
 	                <!--/user login-->
