@@ -4,11 +4,21 @@
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <title>friendComp / Welcome</title>
       <?php include 'header.php' ?>
-      
-</head>
-
+</head>      
 <!--body-->
 <body>  
+      
+<script type="text/javascript">
+/**
+ * This code declares your class and saves an object "blogentry" to the table on StackMob.
+ * StackMob will create the table for you automatically based on your JSON.
+ */
+var BlogEntry = StackMob.Model.extend({ schemaName: 'blogentry' });
+var entry = new BlogEntry({ message: 'hello world!' });
+entry.create();
+</script>
+      
+      
 <div id="fb-root"></div>
 <?php include 'facebookJS.php' ?>
 

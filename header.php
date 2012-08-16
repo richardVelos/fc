@@ -9,7 +9,7 @@ echo <<<_END
 <![endif]-->
 
 <!--jquery library-->
-<script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <!--/jquery library-->
 
 <!--jquery easing-->
@@ -41,7 +41,6 @@ echo <<<_END
 <!--/misc. scripts-->
 
 <!--Stackmob scripts-->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://static.stackmob.com/js/json2-min.js"></script>
 <script type="text/javascript" src="http://static.stackmob.com/js/underscore-1.3.3-min.js"></script>
 <script type="text/javascript" src="http://static.stackmob.com/js/backbone-0.9.2-min.js"></script>
