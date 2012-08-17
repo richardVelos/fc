@@ -27,7 +27,7 @@
 
   /*
    * For testing purposes
-   */
+   *
   StackMobExamples['debugCallback'] = function(txt, s, f) {
     return {
       success: function(result) {
@@ -54,7 +54,7 @@
       }
     };
   };
-  
+ */ 
 
 
   StackMobExamples['createUser'] = function(username) {
