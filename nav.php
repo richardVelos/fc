@@ -51,6 +51,7 @@
                               <li><a href="about.html">Company Info</a></li>
                               <li><a href="terms.html">Terms Of Use & Legal</a></li>
                               <li><a href="faq.html">FAQ</a></li>
+                              <li><a href="stackmob.php">Stackmob Test</a></li>
                         </ul></li>
                         <!--/first level dropdown menu-->
 
