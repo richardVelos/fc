@@ -280,6 +280,14 @@
                               <img src="images/temp/bullet_list2.jpg" alt="" width="55" height="55" />
                               <span><a href="#">Brooke Comped Hollis</a></span>
                               <span class="times-gray-italic-13">July 22, 2011</span>
+                              <span>
+                                    <script type="text/javascript">
+                                    //StackMob.Users is a StackMob.Collection predefined for you in the JS SDK
+                                    var users = new StackMob.Users();
+                                    users.fetch();
+                                    document.write(users.fetch());
+                                    </script>
+                              </span>
                               </li>                            
                         </ul>
                         <!-- /list with image -->
@@ -332,11 +340,7 @@
                   </ul>
                   <div>Copyright &#169; 2012 - FriendComp Inc.</div>
             </div>
-            <script type="text/javascript">
-            //StackMob.Users is a StackMob.Collection predefined for you in the JS SDK
-            var users = new StackMob.Users();
-            users.fetch();
-            </script>
+            
       </div>
       <!-- /footer-->
 
