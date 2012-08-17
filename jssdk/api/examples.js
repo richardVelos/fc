@@ -27,7 +27,7 @@
 
   /*
    * For testing purposes
-   *
+   */
   StackMobExamples['debugCallback'] = function(txt, s, f) {
     return {
       success: function(result) {
@@ -54,7 +54,7 @@
       }
     };
   };
- */ 
+  
 
 
   StackMobExamples['createUser'] = function(username) {
@@ -77,7 +77,7 @@
     user.destroy(StackMobExamples.debugCallback('Delete User: Bruce Wayne'));
   };
 
-  StackMobExamples['login'] = function() {
+  StackMobExamples['btnLoginNow'] = function() {
     var user = new StackMob.User({ username: 'Bruce Wayne', password: 'imbatman' });
     user.login(false, StackMobExamples.debugCallback('Logging in.'), function(model) {
       console.debug(model.toJSON());
