@@ -1,0 +1,35 @@
+{
+    "type": "list",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MeatList",
+        "designer|userAlias": "meatlist",
+        "id": "meatList",
+        "ui": "round",
+        "store": "Meats"
+    },
+    "id": "ExtBox1-ext-gen4631",
+    "designerId": "5ba95f66-fcb2-4bda-93f4-9a5849b019ac",
+    "cn": [
+        {
+            "type": "template",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "itemTpl",
+                "implHandler": [
+                    "<div>{name}</div>"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "013479b7-e82a-4e03-9908-7cbf8c35dbdd"
+        }
+    ]
+}

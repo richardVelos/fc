@@ -1,0 +1,44 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Meat",
+        "idProperty": "meat_id"
+    },
+    "id": "ExtBox1-ext-gen5214",
+    "designerId": "53b4bfcf-886f-4119-9871-b43a4013049a",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField",
+                "name": "meat_id",
+                "type": "auto"
+            },
+            "designerId": "950531f8-2238-4448-a955-93c9397247f1"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField1",
+                "name": "name",
+                "type": "auto"
+            },
+            "designerId": "7f034662-fc67-41f0-9690-54b626e674a4"
+        }
+    ]
+}

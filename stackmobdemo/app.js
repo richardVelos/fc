@@ -25,13 +25,7 @@ Ext.application({
         'Meats'
     ],
     views: [
-        'Main'
+        'MeatList'
     ],
-    name: 'MeatApp',
-
-    launch: function() {
-
-        Ext.create('MeatApp.view.Main', {fullscreen: true});
-    }
-
+    name: 'stackmobdemo'
 });

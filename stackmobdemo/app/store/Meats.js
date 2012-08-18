@@ -13,16 +13,16 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MeatApp.store.Meats', {
+Ext.define('stackmobdemo.store.Meats', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'MeatApp.model.Meat'
+        'stackmobdemo.model.Meat'
     ],
 
     config: {
         autoLoad: true,
-        model: 'MeatApp.model.Meat',
+        model: 'stackmobdemo.model.Meat',
         storeId: 'Meats',
         proxy: {
             type: 'rest',

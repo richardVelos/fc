@@ -37,20 +37,6 @@ Ext.define('MyApp.view.MyPanel', {
                 ]
             },
             {
-                xtype: 'list',
-                itemId: 'TweetList',
-                ui: 'round',
-                itemTpl: [
-                    '<div style="float:left; width: 60px;">',
-                    '    <img src="{profile_image_url}">',
-                    '</div>',
-                    '<div style="margin-left: 62px;">',
-                    '    {text}<br>{created_at:date("d M Y")}',
-                    '</div>'
-                ],
-                store: 'Tweets'
-            },
-            {
                 xtype: 'panel',
                 itemId: 'TweetPreview',
                 padding: '12px',
@@ -77,6 +63,20 @@ Ext.define('MyApp.view.MyPanel', {
                 ],
                 ui: '',
                 scrollable: true
+            },
+            {
+                xtype: 'list',
+                itemId: 'TweetList',
+                ui: 'round',
+                itemTpl: [
+                    '<div style="float:left; width: 60px;">',
+                    '    <img src="{profile_image_url}">',
+                    '</div>',
+                    '<div style="margin-left: 62px;">',
+                    '    {text}<br>{created_at:date("d M Y")}',
+                    '</div>'
+                ],
+                store: 'Tweets'
             }
         ],
         listeners: [

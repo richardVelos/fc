@@ -13,9 +13,9 @@
             "Meats"
         ],
         "views": [
-            "Main"
+            "MeatList"
         ],
-        "name": "MeatApp"
+        "name": "stackmobdemo"
     },
     "id": "ExtBox1-ext-gen17394",
     "designerId": "application"

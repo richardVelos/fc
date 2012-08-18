@@ -14,14 +14,6 @@
     "upgradeVersion": 210000000495,
     "framework": "touch20",
     "topInstanceFileMap": {
-        "9c9733b3-989b-4988-a94b-e721bcf32d71": {
-            "paths": [
-                "metadata/model/Meat",
-                "app/model/override/Meat.js",
-                "app/model/Meat.js"
-            ],
-            "className": "Meat"
-        },
         "65720027-7397-40b7-b016-a1a9c055f3b7": {
             "paths": [
                 "metadata/resource/Library"
@@ -36,25 +28,33 @@
             ],
             "className": "Meats"
         },
-        "c9060988-8e7d-49ad-b970-881c2879252f": {
+        "cb966cc4-9ee1-453b-bae9-c2f9c9c70d01": {
             "paths": [
-                "metadata/view/Main",
-                "app/view/override/Main.js",
-                "app/view/Main.js"
+                "metadata/model/Meat",
+                "app/model/override/Meat.js",
+                "app/model/Meat.js"
             ],
-            "className": "Main"
+            "className": "Meat"
+        },
+        "5ba95f66-fcb2-4bda-93f4-9a5849b019ac": {
+            "paths": [
+                "metadata/view/MeatList",
+                "app/view/override/MeatList.js",
+                "app/view/MeatList.js"
+            ],
+            "className": "MeatList"
         }
     },
     "viewOrderMap": {
         "view": [
-            "c9060988-8e7d-49ad-b970-881c2879252f"
+            "5ba95f66-fcb2-4bda-93f4-9a5849b019ac"
         ],
         "store": [
             "a1ef75d6-e09d-45a8-9cb7-68b2a370d94b"
         ],
         "controller": [],
         "model": [
-            "9c9733b3-989b-4988-a94b-e721bcf32d71"
+            "cb966cc4-9ee1-453b-bae9-c2f9c9c70d01"
         ],
         "resource": [
             "65720027-7397-40b7-b016-a1a9c055f3b7"

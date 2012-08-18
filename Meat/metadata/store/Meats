@@ -1,0 +1,30 @@
+{
+    "type": "store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Meats",
+        "autoLoad": true,
+        "model": "Meat",
+        "storeId": "MeatStore"
+    },
+    "id": "ExtBox1-ext-gen6089",
+    "designerId": "3c355b63-6f8b-4a6b-a23c-48d0ce1232c7",
+    "cn": [
+        {
+            "type": "restproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyRestProxy"
+            },
+            "designerId": "bab32000-e73c-4635-93ea-5b7b4aec4b58"
+        }
+    ]
+}

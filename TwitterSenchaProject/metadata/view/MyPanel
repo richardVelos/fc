@@ -68,6 +68,58 @@
             ]
         },
         {
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyPanel1",
+                "itemId": "TweetPreview",
+                "padding": "12px",
+                "ui": "",
+                "scrollable": true
+            },
+            "designerId": "771dcc3d-cf2d-4b07-ad35-33c62e1d83b1",
+            "cn": [
+                {
+                    "type": "template",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "tpl",
+                        "implHandler": [
+                            "<div style=\"float:left; width: 60px;\">",
+                            "    <img src=\"{profile_image_url}\">",
+                            "</div>",
+                            "<div style=\"position: relative; margin-left: 64px;\">",
+                            "    {name}",
+                            "    <br>",
+                            "    <div style=\"color: gray; font-size: 80%;\">",
+                            "        {description}",
+                            "    </div>",
+                            "</div>",
+                            "",
+                            "<div style=\"clear: both; margin-top: 6px; ",
+                            "    background-color: white; padding: 6px; border-radius: 10px;\"> ",
+                            "    {text}",
+                            "    <br>",
+                            "    <div style=\"color: gray; font-size: 80% padding-top: 6px;\">",
+                            "        Posted: {created_at:date(\"d M Y h:m\")}</div>",
+                            "</div>",
+                            "    "
+                        ],
+                        "designer|displayName": "tpl"
+                    },
+                    "designerId": "03b495bc-f708-4013-afc8-f93aad516921"
+                }
+            ]
+        },
+        {
             "type": "list",
             "reference": {
                 "name": "items",
@@ -121,58 +173,6 @@
                         "name": "itemtap"
                     },
                     "designerId": "846f9d2f-3896-4174-b293-ee1e7faa391a"
-                }
-            ]
-        },
-        {
-            "type": "panel",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "MyPanel1",
-                "itemId": "TweetPreview",
-                "padding": "12px",
-                "ui": "",
-                "scrollable": true
-            },
-            "designerId": "771dcc3d-cf2d-4b07-ad35-33c62e1d83b1",
-            "cn": [
-                {
-                    "type": "template",
-                    "reference": {
-                        "name": "tpl",
-                        "type": "object"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "tpl",
-                        "implHandler": [
-                            "<div style=\"float:left; width: 60px;\">",
-                            "    <img src=\"{profile_image_url}\">",
-                            "</div>",
-                            "<div style=\"position: relative; margin-left: 64px;\">",
-                            "    {name}",
-                            "    <br>",
-                            "    <div style=\"color: gray; font-size: 80%;\">",
-                            "        {description}",
-                            "    </div>",
-                            "</div>",
-                            "",
-                            "<div style=\"clear: both; margin-top: 6px; ",
-                            "    background-color: white; padding: 6px; border-radius: 10px;\"> ",
-                            "    {text}",
-                            "    <br>",
-                            "    <div style=\"color: gray; font-size: 80% padding-top: 6px;\">",
-                            "        Posted: {created_at:date(\"d M Y h:m\")}</div>",
-                            "</div>",
-                            "    "
-                        ],
-                        "designer|displayName": "tpl"
-                    },
-                    "designerId": "03b495bc-f708-4013-afc8-f93aad516921"
                 }
             ]
         }

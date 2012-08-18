@@ -9,8 +9,8 @@
         "designer|userClassName": "Meat",
         "idProperty": "meat_id"
     },
-    "id": "ExtBox1-ext-gen17623",
-    "designerId": "9c9733b3-989b-4988-a94b-e721bcf32d71",
+    "id": "ExtBox1-ext-gen3400",
+    "designerId": "cb966cc4-9ee1-453b-bae9-c2f9c9c70d01",
     "cn": [
         {
             "type": "datafield",
@@ -25,7 +25,22 @@
                 "persist": false,
                 "type": "auto"
             },
-            "designerId": "5aca6a00-1ccb-401a-b850-12c7567a9c85"
+            "designerId": "9ebe5378-9363-4e5c-b9c5-291b8414ed00"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField1",
+                "name": "name",
+                "persist": false,
+                "type": "auto"
+            },
+            "designerId": "63a3b550-4a0a-4761-af59-5ed95d19c0ce"
         }
     ]
 }

@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MeatApp.model.Meat', {
+Ext.define('stackmobdemo.model.Meat', {
     extend: 'Ext.data.Model',
 
     config: {
@@ -21,6 +21,11 @@ Ext.define('MeatApp.model.Meat', {
         fields: [
             {
                 name: 'meat_id',
+                persist: false,
+                type: 'auto'
+            },
+            {
+                name: 'name',
                 persist: false,
                 type: 'auto'
             }
