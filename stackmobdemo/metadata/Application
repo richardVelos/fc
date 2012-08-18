@@ -1,0 +1,22 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Meat"
+        ],
+        "stores": [
+            "Meats"
+        ],
+        "views": [
+            "Main"
+        ],
+        "name": "MeatApp"
+    },
+    "id": "ExtBox1-ext-gen17394",
+    "designerId": "application"
+}

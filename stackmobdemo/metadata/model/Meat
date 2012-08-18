@@ -1,0 +1,31 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Meat",
+        "idProperty": "meat_id"
+    },
+    "id": "ExtBox1-ext-gen17623",
+    "designerId": "9c9733b3-989b-4988-a94b-e721bcf32d71",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField",
+                "name": "meat_id",
+                "persist": false,
+                "type": "auto"
+            },
+            "designerId": "5aca6a00-1ccb-401a-b850-12c7567a9c85"
+        }
+    ]
+}

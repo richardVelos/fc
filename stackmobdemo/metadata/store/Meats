@@ -1,0 +1,31 @@
+{
+    "type": "store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Meats",
+        "autoLoad": true,
+        "model": "Meat",
+        "storeId": "Meats"
+    },
+    "id": "ExtBox1-ext-gen6424",
+    "designerId": "a1ef75d6-e09d-45a8-9cb7-68b2a370d94b",
+    "cn": [
+        {
+            "type": "restproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyRestProxy",
+                "url": "stackmobdemo/meats.json"
+            },
+            "designerId": "cee71e4e-0afb-4dd4-9b76-898baee54344"
+        }
+    ]
+}

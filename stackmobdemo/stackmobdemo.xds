@@ -1,0 +1,66 @@
+{
+    "name": "stackmobdemo",
+    "settings": {
+        "urlPrefix": "",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 584,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000495,
+    "framework": "touch20",
+    "topInstanceFileMap": {
+        "9c9733b3-989b-4988-a94b-e721bcf32d71": {
+            "paths": [
+                "metadata/model/Meat",
+                "app/model/override/Meat.js",
+                "app/model/Meat.js"
+            ],
+            "className": "Meat"
+        },
+        "65720027-7397-40b7-b016-a1a9c055f3b7": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "a1ef75d6-e09d-45a8-9cb7-68b2a370d94b": {
+            "paths": [
+                "metadata/store/Meats",
+                "app/store/override/Meats.js",
+                "app/store/Meats.js"
+            ],
+            "className": "Meats"
+        },
+        "c9060988-8e7d-49ad-b970-881c2879252f": {
+            "paths": [
+                "metadata/view/Main",
+                "app/view/override/Main.js",
+                "app/view/Main.js"
+            ],
+            "className": "Main"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "c9060988-8e7d-49ad-b970-881c2879252f"
+        ],
+        "store": [
+            "a1ef75d6-e09d-45a8-9cb7-68b2a370d94b"
+        ],
+        "controller": [],
+        "model": [
+            "9c9733b3-989b-4988-a94b-e721bcf32d71"
+        ],
+        "resource": [
+            "65720027-7397-40b7-b016-a1a9c055f3b7"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

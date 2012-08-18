@@ -1,0 +1,52 @@
+{
+    "type": "navigationview",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main",
+        "designer|initialView": true
+    },
+    "id": "ExtBox1-ext-gen12186",
+    "designerId": "c9060988-8e7d-49ad-b970-881c2879252f",
+    "cn": [
+        {
+            "type": "list",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "List",
+                "designer|userAlias": "",
+                "docked": null,
+                "id": "meatList",
+                "itemId": null,
+                "ui": "round",
+                "store": "Meats"
+            },
+            "designerId": "e6c0a911-d5db-4756-9f78-33a25f0d893c",
+            "cn": [
+                {
+                    "type": "template",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "itemTpl",
+                        "implHandler": [
+                            "<div style=\"float:left; \">{name}</div>"
+                        ],
+                        "designer|displayName": "itemTpl"
+                    },
+                    "designerId": "ba34b5ba-bb2a-44cf-bc9a-20f3e3a4c121"
+                }
+            ]
+        }
+    ]
+}
