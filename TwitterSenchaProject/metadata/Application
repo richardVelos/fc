@@ -1,0 +1,22 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Tweet"
+        ],
+        "stores": [
+            "Tweets"
+        ],
+        "views": [
+            "MyPanel"
+        ],
+        "name": "MyApp"
+    },
+    "id": "ExtBox1-ext-gen1672",
+    "designerId": "application"
+}

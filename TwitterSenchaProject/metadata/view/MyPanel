@@ -1,0 +1,180 @@
+{
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyPanel",
+        "designer|initialView": true,
+        "ui": "light",
+        "layout": "card"
+    },
+    "id": "ExtBox1-ext-gen5033",
+    "designerId": "0a90215c-2ad1-48d7-a0e1-ecfdda5b53c5",
+    "cn": [
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyToolbar",
+                "docked": "top",
+                "title": "Twitter Feed"
+            },
+            "designerId": "d1089d8e-ffbf-4ded-b5a9-bf3426bac29e",
+            "cn": [
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyButton",
+                        "hidden": true,
+                        "itemId": "Back",
+                        "ui": "back",
+                        "text": "Back"
+                    },
+                    "designerId": "4104f214-952b-43bf-abd4-31f5727df958",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onBackTap",
+                                "fn": "onBackTap",
+                                "implHandler": [
+                                    "button.hide();",
+                                    "this.setActiveItem(0);",
+                                    "this.down(\"#TweetList\").deselectAll();"
+                                ],
+                                "name": "tap"
+                            },
+                            "designerId": "464de14b-dc4f-420f-ad37-eb5de2896fd3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyList",
+                "itemId": "TweetList",
+                "ui": "round",
+                "store": "Tweets"
+            },
+            "designerId": "1a496bce-20a3-4d8d-9cae-288e16e0f2a4",
+            "cn": [
+                {
+                    "type": "template",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "itemTpl",
+                        "implHandler": [
+                            "<div style=\"float:left; width: 60px;\">",
+                            "    <img src=\"{profile_image_url}\">",
+                            "</div>",
+                            "<div style=\"margin-left: 62px;\">",
+                            "    {text}<br>{created_at:date(\"d M Y\")}",
+                            "</div>"
+                        ],
+                        "designer|displayName": "itemTpl"
+                    },
+                    "designerId": "ac24dfcf-61fd-4921-acd4-7292e3648b00"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "onTweetListItemTap",
+                        "fn": "onTweetListItemTap",
+                        "implHandler": [
+                            "this.setActiveItem(1);",
+                            "this.down(\"#Back\").show();",
+                            "this.down(\"#TweetPreview\").setData(record.data);"
+                        ],
+                        "name": "itemtap"
+                    },
+                    "designerId": "846f9d2f-3896-4174-b293-ee1e7faa391a"
+                }
+            ]
+        },
+        {
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyPanel1",
+                "itemId": "TweetPreview",
+                "padding": "12px",
+                "ui": "",
+                "scrollable": true
+            },
+            "designerId": "771dcc3d-cf2d-4b07-ad35-33c62e1d83b1",
+            "cn": [
+                {
+                    "type": "template",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "tpl",
+                        "implHandler": [
+                            "<div style=\"float:left; width: 60px;\">",
+                            "    <img src=\"{profile_image_url}\">",
+                            "</div>",
+                            "<div style=\"position: relative; margin-left: 64px;\">",
+                            "    {name}",
+                            "    <br>",
+                            "    <div style=\"color: gray; font-size: 80%;\">",
+                            "        {description}",
+                            "    </div>",
+                            "</div>",
+                            "",
+                            "<div style=\"clear: both; margin-top: 6px; ",
+                            "    background-color: white; padding: 6px; border-radius: 10px;\"> ",
+                            "    {text}",
+                            "    <br>",
+                            "    <div style=\"color: gray; font-size: 80% padding-top: 6px;\">",
+                            "        Posted: {created_at:date(\"d M Y h:m\")}</div>",
+                            "</div>",
+                            "    "
+                        ],
+                        "designer|displayName": "tpl"
+                    },
+                    "designerId": "03b495bc-f708-4013-afc8-f93aad516921"
+                }
+            ]
+        }
+    ]
+}

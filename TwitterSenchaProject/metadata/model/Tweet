@@ -1,0 +1,83 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Tweet"
+    },
+    "id": "ExtBox1-ext-gen2087",
+    "designerId": "da256ed4-0851-435f-b959-bd650129c236",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField",
+                "name": "text"
+            },
+            "designerId": "e63f2ce0-11e4-424d-97ad-e5974bce1e41"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField1",
+                "name": "created_at"
+            },
+            "designerId": "8556609d-ef03-49bb-ab31-0276fd02d867"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField2",
+                "mapping": "user.profile_image_url",
+                "name": "profile_image_url"
+            },
+            "designerId": "8670630a-6dca-4dc0-a0ca-0b1b5de03ad2"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField4",
+                "mapping": "user.description",
+                "name": "description"
+            },
+            "designerId": "1229c1e8-0b73-4305-834b-a02d704088b3"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField5",
+                "mapping": "user.name",
+                "name": "name"
+            },
+            "designerId": "4a1e5421-b8c5-4bce-9bd7-272791ea1c81"
+        }
+    ]
+}

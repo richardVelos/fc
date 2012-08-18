@@ -1,0 +1,66 @@
+{
+    "name": "TwitterSenchaProject",
+    "settings": {
+        "urlPrefix": "localhost",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 584,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000495,
+    "framework": "touch20",
+    "topInstanceFileMap": {
+        "0a90215c-2ad1-48d7-a0e1-ecfdda5b53c5": {
+            "paths": [
+                "metadata/view/MyPanel",
+                "app/view/override/MyPanel.js",
+                "app/view/MyPanel.js"
+            ],
+            "className": "MyPanel"
+        },
+        "7ba6abbe-a2bf-400b-a531-b915af57bb12": {
+            "paths": [
+                "metadata/store/Tweets",
+                "app/store/override/Tweets.js",
+                "app/store/Tweets.js"
+            ],
+            "className": "Tweets"
+        },
+        "da256ed4-0851-435f-b959-bd650129c236": {
+            "paths": [
+                "metadata/model/Tweet",
+                "app/model/override/Tweet.js",
+                "app/model/Tweet.js"
+            ],
+            "className": "Tweet"
+        },
+        "01f80924-af96-479a-99c3-b44f3cad13c0": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "0a90215c-2ad1-48d7-a0e1-ecfdda5b53c5"
+        ],
+        "store": [
+            "7ba6abbe-a2bf-400b-a531-b915af57bb12"
+        ],
+        "controller": [],
+        "model": [
+            "da256ed4-0851-435f-b959-bd650129c236"
+        ],
+        "resource": [
+            "01f80924-af96-479a-99c3-b44f3cad13c0"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
